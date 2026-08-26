@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Matthew Alexander - CV</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #e8e8e8;
+            color: #222;
+            line-height: 1.5;
+        }
+
+        .cv {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 30px auto;
+            background: white;
+            display: grid;
+            grid-template-columns: 34% 66%;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* ================= LEFT COLUMN ================= */
+
+        .sidebar {
+            background: #252525;
+            color: white;
+            padding: 40px 30px;
+        }
+
+        .name {
+            font-size: 34px;
+            font-weight: 700;
+            line-height: 1.05;
+            margin-bottom: 8px;
+        }
+
+        .job-title {
+            font-size: 14px;
+            color: #cfcfcf;
+            letter-spacing: 1.5px;
+            margin-bottom: 35px;
+        }
+
+        .section {
+            margin-bottom: 32px;
+        }
+
+        .section-title {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 1px solid #777;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .contact-item {
+            margin-bottom: 13px;
+            font-size: 12px;
+            color: #ddd;
+            word-break: break-word;
+        }
+
+        .contact-label {
+            display: block;
+            font-size: 10px;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 2px;
+        }
+
+        .skills {
+            list-style: none;
+        }
+
+        .skills li {
+            font-size: 12px;
+            margin-bottom: 9px;
+            color: #ddd;
+        }
+
+        .skills li::before {
+            content: "•";
+            margin-right: 8px;
+            color: white;
+        }
+
+        .languages {
+            list-style: none;
+        }
+
+        .languages li {
+            font-size: 12px;
+            margin-bottom: 8px;
+            color: #ddd;
+        }
+
+        /* ================= MAIN CONTENT ================= */
+
+        .content {
+            padding: 40px 38px;
+        }
+
+        .content-section {
+            margin-bottom: 35px;
+        }
+
+        .content-title {
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+            color: #222;
+            border-bottom: 2px solid #222;
+            padding-bottom: 8px;
+            margin-bottom: 18px;
+        }
+
+        .about {
+            font-size: 13px;
+            color: #555;
+            max-width: 500px;
+        }
+
+        /* ================= EDUCATION ================= */
+
+        .education-item {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 25px;
+            border-left: 2px solid #333;
+        }
+
+        .education-item::before {
+            content: "";
+            width: 8px;
+            height: 8px;
+            background: #333;
+            border-radius: 50%;
+            position: absolute;
+            left: -5px;
+            top: 5px;
+        }
+
+        .institution {
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+
+        .degree {
+            font-size: 12px;
+            color: #555;
+            margin-top: 3px;
+        }
+
+        .year {
+            font-size: 11px;
+            color: #888;
+            margin-top: 3px;
+        }
+
+        .score {
+            font-size: 13px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        /* ================= ACHIEVEMENTS ================= */
+
+        .achievement {
+            margin-bottom: 20px;
+        }
+
+        .achievement-title {
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .achievement-description {
+            font-size: 12px;
+            color: #666;
+            margin-top: 4px;
+        }
+
+        /* ================= PRINT ================= */
+
+        @media print {
+            body {
+                background: white;
+            }
+
+            .cv {
+                margin: 0;
+                box-shadow: none;
+            }
+        }
+
+        /* ================= MOBILE ================= */
+
+        @media (max-width: 800px) {
+            .cv {
+                width: 100%;
+                margin: 0;
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                padding: 30px;
+            }
+
+            .content {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="cv">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <h1 class="name">
+            Matthew<br>
+            Alexander
+        </h1>
+
+        <p class="job-title">
+            COMPUTER SCIENCE ENJOYER
+        </p>
+
+
+        <!-- CONTACT -->
+
+        <div class="section">
+
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact-item">
+                <span class="contact-label">Phone</span>
+                +62 896-0243-5890
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-label">Email</span>
+                matthew.alexanderch@gmail.com
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-label">Location</span>
+                Earth
+            </div>
+
+        </div>
+
+
+        <!-- SKILLS -->
+
+        <div class="section">
+
+            <h2 class="section-title">Skills</h2>
+
+            <ul class="skills">
+                <li>Coding</li>
+                <li>Analytical Thinking</li>
+                <li>Counting</li>
+                <li>Marketing</li>
+                <li>Graphic Design</li>
+            </ul>
+
+        </div>
+
+
+        <!-- LANGUAGES -->
+
+        <div class="section">
+
+            <h2 class="section-title">Language</h2>
+
+            <ul class="languages">
+                <li>English</li>
+                <li>Indonesian</li>
+                <li>Mandarin</li>
+            </ul>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="content">
+
+
+        <!-- ABOUT ME -->
+
+        <section class="content-section">
+
+            <h2 class="content-title">
+                About Me
+            </h2>
+
+            <p class="about">
+                Someone proficient in mathematics and applied science
+                who enjoys using computational abilities to solve
+                modern problems.
+            </p>
+
+        </section>
+
+
+        <!-- EDUCATION -->
+
+        <section class="content-section">
+
+            <h2 class="content-title">
+                Education
+            </h2>
+
+
+            <div class="education-item">
+
+                <div class="institution">
+                    INSTITUT TEKNOLOGI BANDUNG
+                </div>
+
+                <div class="degree">
+                    Bachelor of Technical Information
+                </div>
+
+                <div class="year">
+                    2011 - 2015
+                </div>
+
+                <div class="score">
+                    GPA 3.65
+                </div>
+
+            </div>
+
+
+            <div class="education-item">
+
+                <div class="institution">
+                    NATIONAL UNIVERSITY OF SINGAPORE
+                </div>
+
+                <div class="degree">
+                    Master of Computer Science
+                </div>
+
+                <div class="year">
+                    2014 - 2019
+                </div>
+
+                <div class="score">
+                    GPA 3.80
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ACHIEVEMENTS -->
+
+        <section class="content-section">
+
+            <h2 class="content-title">
+                Achievements
+            </h2>
+
+
+            <div class="achievement">
+
+                <div class="achievement-title">
+                    NATIONAL SCIENCE OLYMPIAD
+                </div>
+
+                <div class="achievement-description">
+                    Physics Competition — 2025
+                </div>
+
+                <div class="achievement-description">
+                    Managed to get a respectable score.
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
